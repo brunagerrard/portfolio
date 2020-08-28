@@ -1,0 +1,68 @@
+.homepage {
+  position: relative;
+  overflow: hidden;
+  
+  height: 100vh;
+
+  background: linear-gradient(45deg, rgba(119, 0, 255, 0.171), rgb(153, 0, 255));
+}
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+span {
+  width: 150%;
+  height: 3600px;
+  position: absolute;
+  z-index: -1;
+
+  background: url("../../images/bg.jpg") no-repeat;
+
+  animation: scrollingBackground 15s ease-in infinite alternate;
+}
+
+@keyframes scrollingBackground {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: .1;
+  }
+
+  30% {
+    opacity: .5;
+    left: -150px;
+  }
+
+  50% {
+    left: -300px;
+  }
+
+  70% {
+    opacity: .5;
+    left: -150px
+  }
+
+  100% {
+    top: -2800px;
+    opacity: .1;
+    left: 0;
+  }
+}
+
+a {
+  font-size: 3.2rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+  color: rgba(255, 255, 255, 0.85);
+
+  transition: .3s all;
+}
+
+a:hover {
+  margin-top: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
+}

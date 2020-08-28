@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Oxygen&family=Quicksand:wght@300;400;500;700&display=swap');
+
+* { margin: 0; padding: 0; list-style: none;}
+
+
+:root {
+  /*font styles*/
+  --main-text: 400 1.3rem 'Oxygen', 'sans-serif';
+  --titles: 400 2.4rem 'Quicksand', 'sans-serif';
+  --subtitles: 300 1.8rem 'Quicksand', 'sans-serif';
+  --links: 300 1rem 'Quicksand', 'sans-serif';
+
+  /*colors*/
+  --main-text-color: #d3ccdd;
+  --background: #303a55;
+  --secondary: #776d8a;
+  --highlight: #e94560;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--background);
+
+  font: var(--main-text);
+  color: var(--main-text-color);
+}
+
+section {
+  width: 80vw;
+  margin: 2.4rem auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font: var(--titles);
+}
+
+h2 {
+  font: var(--subtitles);
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+a {
+  font: var(--links);
+  text-decoration: none;
+  color: #fff;
+}
