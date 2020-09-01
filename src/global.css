@@ -21,7 +21,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: var(--background);
+  position: relative;
+  overflow: hidden;
+  
+  height: 100vh;
+
+  background: linear-gradient(45deg, rgb(32, 5, 63), rgb(108, 1, 180));
 
   font: var(--main-text);
   color: var(--main-text-color);

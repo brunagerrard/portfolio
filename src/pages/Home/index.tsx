@@ -11,8 +11,6 @@ function Home() {
         <Link to="/work">work</Link>
         <Link to="/contact">contact</Link>
       </nav>
-      <span className="bg">
-      </span>
     </div>
   )
 }
