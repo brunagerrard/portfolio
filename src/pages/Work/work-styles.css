@@ -1,0 +1,39 @@
+.work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .work {
+  grid-template-columns: 1fr;
+  }
+  
+}
+
+.eachRepo {
+  border: 2px solid rgb(163, 3, 255);
+  border-radius: 15px;
+  margin: 1.6rem;
+  padding: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.eachRepo a {
+  font-size: 1.8rem;
+  margin-bottom: .6rem;
+}
+
+.eachRepo small {
+  font-size: .8rem;
+  
+  width: fit-content;
+  padding: .2rem .5rem;
+  margin-bottom: 2.4rem;
+  border-radius: 20px;
+
+  color: #000;
+  background-color: rgb(162, 0, 255);
+}

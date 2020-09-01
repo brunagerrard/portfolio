@@ -16,23 +16,20 @@ export default class About extends Component {
       slidesToScroll: 1
     };
     return (
-      <section className="about">
-        <div className="my-slider">
-          <small>aboutMe</small>
-          <Slider {...settings} className="slider">
-            <div>
-              <h1>Hey, I'm Bruna</h1>
-              <h1>A front-end developer.</h1>
-            </div>
-            <div>
-              <h2>Academic background</h2>
-            </div>
-            <div>
-              <h2>3</h2>
-            </div>
-          </Slider>
-        </div>
-      </section>
+      <div className="about">
+        <h2>about bruna</h2>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+        </Slider>
+      </div>
     );
   }
 }

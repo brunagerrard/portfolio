@@ -1,5 +1,7 @@
 .about {
+  width: 80vw;
   height: 75vh;
+  margin: 10vh auto;
 
   border: 1px solid var(--secondary);
   box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.062);
@@ -7,22 +9,6 @@
   color: var(--secondary);
 
   transition: .5s all;
-}
-
-.my-slider {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.slider {
-  height: 100%;
-}
-
-.slider div {
-  background-color: #fff;
-  text-align: center;
 }
 
 .about:hover {
@@ -34,4 +20,9 @@
 
 .about p {
   color: var(--main-text-color);
+}
+
+.each-slide {
+  width: 100%;
+  height: 100%;
 }
