@@ -17,16 +17,19 @@ export default class About extends Component {
     };
     return (
       <div className="about">
-        <h2>about bruna</h2>
+        <h2>recommendations</h2>
         <Slider {...settings}>
           <div>
-            <h3>1</h3>
+            <p>Working alongside Bruna is every UI designer's dream because her skills can meet 99% of a designer's requirements, and when something isn't achievable for her, she lets us know and engages in the process of redesigning. Besides her technical skills, Bruna delivers results fast, is humble and amazingly self-managed. I look forward to working with her again in the future because she's an incredible person.</p>
+            <small>Marianne Eugenio</small>
           </div>
           <div>
-            <h3>2</h3>
+            <p>A raw talent waiting to be polished. I had the chance to work with Bruna for nearly a year while in charge of the sales team, and I noticed in her fundamental qualities in a modern professional. She's a studious and disciplined doer. After a few months working together, I promoted Bruna, giving her more responsibilities to take in, and was surprised by her dilligence in carrying out the tasks and interest in pursuing new knowledge. Even with a more introspective social profile she performs well in customer relations thanks to her communication and creativity skills - something I discovered over time when Bruna started producing amazing written content for our company's clients.</p>
+            <small>Guto Belchior</small>
           </div>
           <div>
-            <h3>3</h3>
+            <p>Bruna is a dedicated worker who's focused on problem-solving and performing well. One of her main qualities is her professional and resolutive posture even in face of unfavorable situations. It's someone who, given the opportunity, adds a lot to the team and the organization as a whole.</p>
+            <small>Henrique Vitta</small>
           </div>
         </Slider>
       </div>
