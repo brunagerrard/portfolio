@@ -1,5 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    👩‍💻 My Portfolio
+</h1>
 
-### Resources
+## 👩‍🚀 About Me.
+Trying to figure out this whole web-developing thing, one step at a time.
 
-Background image: Photo by <a href="https://unsplash.com/@andyjh07?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andy Holmes</a> on <a href="https://unsplash.com/s/photos/galaxy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+You can contact me [here](https://linkedin.com/in/nolascobruna) 🙋‍♀️
+
+## ℹ This Project.
+I'm builing my online portfolio with ReactJS. It's been a long time coming, folks. Hang in there. It's gonna happen.
+
+## 🚀 Tech.
+
+✔ [ReactJS](https://pt-br.reactjs.org/)
+
+✔ [TypeScript](https://www.typescriptlang.org/)
+
+✔ [React Slick](https://react-slick.neostack.com/)
+
+## 💻 Browser Compatibility.
+Right now, this works in Chrome Desktop.
