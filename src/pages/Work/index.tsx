@@ -4,7 +4,8 @@ import './work-styles.css';
 
 const githubAPI = "https://api.github.com/users/brunagerrard/repos";
 
-fetch(githubAPI)
+function Work() {
+  fetch(githubAPI)
   .then((response) => response.text())
   .then((result) => {
 
@@ -39,9 +40,7 @@ fetch(githubAPI)
        eachRepo?.appendChild(repoLang);
        eachRepo?.appendChild(repoDesc);
     })
-  })
-
-function Work() {
+  });
   return (
     <section className="work" id="work-grid">
 
