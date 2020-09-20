@@ -11,7 +11,7 @@ function Work() {
 
     const data = JSON.parse(result);
     
-    data.map((each: { name: string; html_url: string; language: string; description: string; }) => {
+    data.forEach((each: { name: string; html_url: string; language: string; description: string; }) => {
       const {
         name,
         html_url,
