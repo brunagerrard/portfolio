@@ -32,15 +32,19 @@ function Work() {
               repoLang.innerHTML = language;
 
           var repoDesc = document.createElement("p");
-              repoDesc.innerHTML = description;
-      
+              repoDesc.innerHTML = description;      
 
        grid?.appendChild(eachRepo);
        eachRepo?.appendChild(repoName);
        eachRepo?.appendChild(repoLang);
        eachRepo?.appendChild(repoDesc);
+
+       if (name === 'brunagerrard') {
+        eachRepo.style.display = 'none'
+      }
     })
   });
+
   return (
     <section className="work" id="work-grid">
 

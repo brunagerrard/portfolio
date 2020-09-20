@@ -23,10 +23,30 @@ body {
 
   height: 100%;
 
-  background: linear-gradient(45deg, rgb(32, 5, 63), rgb(108, 1, 180));
+  background: linear-gradient(305deg, #20013f, #6c01b4, #371447);
+  background-size: 800% 800%;
+  -webkit-animation: bggradient 20s ease infinite;
+  -moz-animation: bggradient 20s ease infinite;
+  animation: bggradient 20s ease infinite;
 
   font: var(--main-text);
   color: var(--main-text-color);
+}
+
+@-webkit-keyframes bggradient {
+  0%{background-position:92% 0%}
+  50%{background-position:9% 100%}
+  100%{background-position:92% 0%}
+}
+@-moz-keyframes bggradient {
+  0%{background-position:92% 0%}
+  50%{background-position:9% 100%}
+  100%{background-position:92% 0%}
+}
+@keyframes bggradient {
+  0%{background-position:92% 0%}
+  50%{background-position:9% 100%}
+  100%{background-position:92% 0%}
 }
 
 section {
