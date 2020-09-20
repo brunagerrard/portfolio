@@ -13,6 +13,7 @@ const About = styled.div`
   color: var(--secondary);
   transition: .5s all;
   &:hover {
+    transform: translateY(-10px);
     border: 1px solid var(--highlight);
     box-shadow: -20px -20px 50px rgba(255, 255, 255, 0.062);
     color: var(--highlight);
