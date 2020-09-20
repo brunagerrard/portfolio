@@ -27,6 +27,8 @@ function Work() {
           var repoName = document.createElement("a");
               repoName.innerHTML = name;
               repoName.href = html_url;
+              repoName.setAttribute('target','_blank');
+              repoName.setAttribute('rel','noopener noreferrer');
             
           var repoLang = document.createElement("small");
               repoLang.innerHTML = language;
