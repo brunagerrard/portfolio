@@ -12,6 +12,7 @@
 }
 
 .eachRepo {
+  min-width: 22vw;
   border: 2px solid rgb(163, 3, 255);
   border-radius: 15px;
   margin: 1.6rem;
@@ -19,6 +20,50 @@
 
   display: flex;
   flex-direction: column;
+
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+
+  transition: .3s all ease-out;
+}
+
+.eachRepo:before {
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(114, 3, 179, .7);
+  transform: scaleY(0);
+  transition: all .5s ease-out;
+}
+
+.eachRepo:hover {
+  transform: translateY(-20px);
+  background: rgb(163, 3, 255);
+}
+
+.eachRepo:hover:before, .eachRepo:focus:before, .eachRepo:active:before {
+  transform: scaleY(1);
+}
+
+.eachRepo p {
+  transition: 1s all;
+  opacity: 0;
+}
+
+@media (min-width: 992px) {
+  .eachRepo p {
+    font-size: 1rem;
+  }
+}
+
+.eachRepo:hover p {
+  opacity: 1;
 }
 
 .eachRepo a {

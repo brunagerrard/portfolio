@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Formacao = styled.div`
+  max-width: 768px;
   margin: 1.8rem auto;
   background-color: var(--highlight);
   padding: 1rem;

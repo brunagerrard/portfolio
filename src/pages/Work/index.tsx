@@ -23,6 +23,8 @@ function Work() {
 
         var eachRepo = document.createElement("div");
             eachRepo.className = "eachRepo";
+            eachRepo.style.background = `url(/images/${name}.png) no-repeat center`;
+            eachRepo.style.backgroundSize = "cover";
 
           var repoName = document.createElement("a");
               repoName.innerHTML = name;
@@ -34,14 +36,14 @@ function Work() {
               repoLang.innerHTML = language;
 
           var repoDesc = document.createElement("p");
-              repoDesc.innerHTML = description;      
+              repoDesc.innerHTML = description;
 
        grid?.appendChild(eachRepo);
        eachRepo?.appendChild(repoName);
        eachRepo?.appendChild(repoLang);
        eachRepo?.appendChild(repoDesc);
 
-       if (name === 'brunagerrard') {
+       if (name === 'brunagerrard' || name === 'portfolio') {
         eachRepo.style.display = 'none'
       }
     })

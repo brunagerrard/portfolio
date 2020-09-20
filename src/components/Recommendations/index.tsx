@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const About = styled.div`
   width: 80vw;
+  max-width: 768px;
   margin: 2.4rem auto;
   border: 1px solid var(--secondary);
   box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.062);
