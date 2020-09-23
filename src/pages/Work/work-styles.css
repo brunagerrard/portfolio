@@ -1,6 +1,6 @@
 .work {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
 }
 
@@ -12,73 +12,84 @@
 }
 
 .eachRepo {
+  display: flex;
+  flex-direction: column;
+}
+
+.repoLink {
   min-width: 22vw;
-  border: 2px solid rgb(163, 3, 255);
-  border-radius: 15px;
+  min-height: 180px;
   margin: 1.6rem;
   padding: 1.6rem;
 
-  display: flex;
-  flex-direction: column;
-
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 5px 10px 50px rgba(255, 255, 255, .1);
+  
   position: relative;
-
+  transform: perspective(1px) translateZ(0);  
   transition: .3s all ease-out;
 }
 
-.eachRepo:before {
+.repoLink:before {
   content: "";
-  border-radius: 15px;
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(114, 3, 179, .7);
+  background: rgba(0, 0, 0, 0.6);
   transform: scaleY(0);
   transition: all .5s ease-out;
 }
 
-.eachRepo:hover {
-  transform: translateY(-20px);
-  background: rgb(163, 3, 255);
+.repoLink:hover {
+  transform: translateY(-20px) scale(1.1);
+  box-shadow: 5px 10px 50px rgba(255, 255, 255, .2);
 }
 
-.eachRepo:hover:before, .eachRepo:focus:before, .eachRepo:active:before {
+.repoLink:hover:before, .repoLink:focus:before, .repoLink:active:before {
   transform: scaleY(1);
 }
 
-.eachRepo p {
+.repoLink p {
   transition: 1s all;
   opacity: 0;
+
+  margin: 2.4rem auto 0;
 }
 
 @media (min-width: 992px) {
-  .eachRepo p {
+  .repoLink p {
     font-size: 1rem;
   }
 }
 
-.eachRepo:hover p {
+.repoLink:hover p {
   opacity: 1;
+  transform: translateX(10px);
 }
 
-.eachRepo a {
-  font-size: 1.8rem;
-  margin-bottom: .6rem;
+.repoLink h1 {
+  width: fit-content;
+  padding: .2rem .5rem;
+  margin-bottom: .8rem;
+
+  border-radius: 7px;
+  color: rgb(162, 0, 255);
+  background-color: #fff;
+
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-.eachRepo small {
+.repoLink small {
   font-size: .8rem;
+  font-weight: 500;
   
   width: fit-content;
   padding: .2rem .5rem;
   margin-bottom: 2.4rem;
-  border-radius: 20px;
+  border-radius: 5px;
 
-  color: #000;
+  color: #fff;
   background-color: rgb(162, 0, 255);
 }

@@ -19,32 +19,35 @@ function Work() {
         description
       } = each;
 
-      var grid = document.getElementById("work-grid");
+      const grid = document.getElementById("work-grid");
 
-        var eachRepo = document.createElement("div");
-            eachRepo.className = "eachRepo";
-            eachRepo.style.background = `url(/images/${name}.png) no-repeat center`;
-            eachRepo.style.backgroundSize = "cover";
+        const eachRepo = document.createElement("div");        
 
-          var repoName = document.createElement("a");
+          const repoLink = document.createElement("a");
+              repoLink.href = html_url;
+              repoLink.setAttribute('target','_blank');
+              repoLink.setAttribute('rel','noopener noreferrer');
+              repoLink.className = "repoLink";
+              repoLink.style.background = `url(/images/${name}.png) no-repeat center`;
+              repoLink.style.backgroundSize = "cover";
+
+          const repoName = document.createElement("h1");
               repoName.innerHTML = name;
-              repoName.href = html_url;
-              repoName.setAttribute('target','_blank');
-              repoName.setAttribute('rel','noopener noreferrer');
             
-          var repoLang = document.createElement("small");
+          const repoLang = document.createElement("small");
               repoLang.innerHTML = language;
 
-          var repoDesc = document.createElement("p");
+          const repoDesc = document.createElement("p");
               repoDesc.innerHTML = description;
 
-       grid?.appendChild(eachRepo);
+       grid?.appendChild(repoLink);
+       repoLink?.appendChild(eachRepo);
        eachRepo?.appendChild(repoName);
        eachRepo?.appendChild(repoLang);
        eachRepo?.appendChild(repoDesc);
 
        if (name === 'brunagerrard' || name === 'portfolio') {
-        eachRepo.style.display = 'none'
+        repoLink.style.display = 'none'
       }
     })
   });
