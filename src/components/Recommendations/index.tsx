@@ -48,17 +48,17 @@ export default class Recommendations extends Component {
     return (
       <Recoms>
         <Slider {...settings}>
-          <div>
-            <p>A Bruna mostrou proatividade, espírito de equipe e foco no resultado. Pude ter o prazer de trabalhar com a Bruna em uma transformação digital de uma ONG e em um lançamento premiado de uma startup. Além de suas habilidades técnicas, facilmente comprovadas via portifólio, a Bruna demonstrou ser uma pessoa muito valorosa na equipe.</p>
-            <small>Gustavo Cesar</small>
+        <div>
+            <p>Ter a Bruna como programadora de um projeto é o sonho de qualquer designer de interfaces, porque suas habilidades são capazes de adequar 99% das sugestões passadas pelo designer, e quando algo não é possível ela informa de maneira objetiva e participa do processo de recriação da interface. Além de todas as habilidades técnicas, Bruna ainda possui uma entrega rápida de resultados, humildade e uma autogestão incrível. Espero ter outras oportunidades de trabalhar ao lado dela porque é uma pessoa incrível.</p>
+            <small>Marianne Eugenio</small>
           </div>
           <div>
             <p>Tive a sorte de trabalhar com a Bruna em um projeto, e logo fiquei surpreendido com a sua capacidade de transformar meus protótipos em produtos de fato. Rapidez, capacidade analítica de transformar o produto conforme o prazo, e segurança, são alguns de vários pontos que me chamaram a atenção. É uma profissional indispensável para o mercado e estou ansioso para trabalhar com ela novamente!</p>
             <small>William Vieira</small>
           </div>
           <div>
-            <p>Ter a Bruna como programadora de um projeto é o sonho de qualquer designer de interfaces, porque suas habilidades são capazes de adequar 99% das sugestões passadas pelo designer, e quando algo não é possível ela informa de maneira objetiva e participa do processo de recriação da interface. Além de todas as habilidades técnicas, Bruna ainda possui uma entrega rápida de resultados, humildade e uma autogestão incrível. Espero ter outras oportunidades de trabalhar ao lado dela porque é uma pessoa incrível.</p>
-            <small>Marianne Eugenio</small>
+            <p>A Bruna mostrou proatividade, espírito de equipe e foco no resultado. Pude ter o prazer de trabalhar com a Bruna em uma transformação digital de uma ONG e em um lançamento premiado de uma startup. Além de suas habilidades técnicas, facilmente comprovadas via portifólio, a Bruna demonstrou ser uma pessoa muito valorosa na equipe.</p>
+            <small>Gustavo Cesar</small>
           </div>
         </Slider>
       </Recoms>

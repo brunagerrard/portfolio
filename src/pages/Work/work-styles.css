@@ -1,10 +1,3 @@
-.work-title {
-  font-size: 2.4rem;
-  text-align: center;
-  text-decoration: underline;
-  text-underline-position: under;
-}
-
 .work {
   display: grid;
   grid-template-columns: 1fr 1fr;

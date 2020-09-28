@@ -2,7 +2,6 @@ import React from 'react';
 
 // import './about-styles.css';
 import Recommendations from '../../components/Recommendations';
-import { Link } from 'react-router-dom';
 import Education from '../../components/Education';
 import GoBackBtn from '../../components/GoBackBtn';
 
@@ -11,13 +10,10 @@ function About() {
     <>
     <GoBackBtn />
       <section>
-        <h2>education</h2>
-        <Education />
-        
-        <h2>recommendations</h2>
+        <h1 className="each-section-title">recomendações</h1>
         <Recommendations />
-      
-        <Link to="/">home</Link>
+        <h1 className="each-section-title" style={{marginTop: 50}}>educação</h1>
+        <Education />
       </section>
     </>
   )

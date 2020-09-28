@@ -75,3 +75,11 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+.each-section-title {
+  font-size: 2.4rem;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-transform: uppercase;
+}
