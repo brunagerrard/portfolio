@@ -56,6 +56,7 @@ function Work() {
   return (
     <>
       <GoBackBtn />
+      <h1 className="work-title">PROJETOS</h1>
       <section className="work" id="work-grid">
       
       </section>
