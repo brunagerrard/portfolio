@@ -22,7 +22,7 @@
   margin: 1.6rem;
   padding: 1.6rem;
 
-  box-shadow: 5px 10px 50px rgba(255, 255, 255, .1);
+  box-shadow: 11px 11px 30px rgba(0, 0, 0, 0.2);
   
   position: relative;
   transform: perspective(1px) translateZ(0);  
@@ -37,14 +37,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   transform: scaleY(0);
   transition: all .5s ease-out;
 }
 
 .repoLink:hover {
   transform: translateY(-20px) scale(1.1);
-  box-shadow: 5px 10px 50px rgba(255, 255, 255, .2);
 }
 
 .repoLink:hover:before, .repoLink:focus:before, .repoLink:active:before {

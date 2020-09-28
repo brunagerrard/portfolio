@@ -46,7 +46,7 @@ function Work() {
        eachRepo?.appendChild(repoLang);
        eachRepo?.appendChild(repoDesc);
 
-       if (name === 'brunagerrard' || name === 'portfolio') {
+       if (name === 'brunagerrard' || name === 'portfolio' || name === 'front-end-jr') {
         repoLink.style.display = 'none'
       }
     })

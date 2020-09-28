@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const About = styled.div`
+const Recoms = styled.div`
   width: 80vw;
   max-width: 768px;
   margin: 2.4rem auto;
@@ -46,7 +46,7 @@ export default class Recommendations extends Component {
     };
 
     return (
-      <About>
+      <Recoms>
         <Slider {...settings}>
           <div>
             <p>A Bruna mostrou proatividade, espírito de equipe e foco no resultado. Pude ter o prazer de trabalhar com a Bruna em uma transformação digital de uma ONG e em um lançamento premiado de uma startup. Além de suas habilidades técnicas, facilmente comprovadas via portifólio, a Bruna demonstrou ser uma pessoa muito valorosa na equipe.</p>
@@ -61,7 +61,7 @@ export default class Recommendations extends Component {
             <small>Marianne Eugenio</small>
           </div>
         </Slider>
-      </About>
+      </Recoms>
     );
   }
 }
