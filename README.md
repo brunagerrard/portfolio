@@ -20,5 +20,7 @@ It's been a long time coming, folks. Hang in there. It's gonna happen.
 
 ✔ [React Slick](https://react-slick.neostack.com/)
 
+✔ [React Icons](https://react-icons.github.io/)
+
 ## 💻 Browser Compatibility.
 Right now, this works in Chrome Desktop.

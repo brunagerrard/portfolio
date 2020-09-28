@@ -1,4 +1,5 @@
 import React from 'react';
+import GoBackBtn from '../../components/GoBackBtn';
 
 import './work-styles.css';
 
@@ -53,9 +54,12 @@ function Work() {
   });
 
   return (
-    <section className="work" id="work-grid">
-
-    </section>
+    <>
+      <GoBackBtn />
+      <section className="work" id="work-grid">
+      
+      </section>
+    </>
   )
 }
 
