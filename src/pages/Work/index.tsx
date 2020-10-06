@@ -5,7 +5,7 @@ import './work-styles.css';
 
 const githubAPI = "https://api.github.com/users/brunagerrard/repos";
 
-function Work() {
+function showRepos() {
   fetch(githubAPI)
   .then((response) => response.text())
   .then((result) => {
@@ -21,9 +21,7 @@ function Work() {
       } = each;
 
       const grid = document.getElementById("work-grid");
-
-        const eachRepo = document.createElement("div");        
-
+        const eachRepo = document.createElement("div");
           const repoLink = document.createElement("a");
               repoLink.href = html_url;
               repoLink.setAttribute('target','_blank');
@@ -31,13 +29,10 @@ function Work() {
               repoLink.className = "repoLink";
               repoLink.style.background = `url(/images/${name}.png) no-repeat center`;
               repoLink.style.backgroundSize = "cover";
-
           const repoName = document.createElement("h1");
-              repoName.innerHTML = name;
-            
+              repoName.innerHTML = name;            
           const repoLang = document.createElement("small");
               repoLang.innerHTML = language;
-
           const repoDesc = document.createElement("p");
               repoDesc.innerHTML = description;
 
@@ -52,16 +47,16 @@ function Work() {
       }
     })
   });
+}
 
+export default function Work() {
   return (
     <>
+      {showRepos()}
+
       <GoBackBtn />
       <h1 className="each-section-title">PROJETOS</h1>
-      <section className="work" id="work-grid">
-      
-      </section>
+      <section className="work" id="work-grid"></section>
     </>
   )
 }
-
-export default Work;
